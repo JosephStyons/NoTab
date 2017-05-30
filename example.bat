@@ -1,0 +1,1 @@
+"C:\Users\styonsjr\Documents\visual studio 2015\Projects\NoTab\NoTab\bin\Debug\NoTab.exe" "C:\dev\src\git - Copy" *.* 2 SILENT

@@ -1,0 +1,6 @@
+c:\users\styonsjr\documents\visual studio 2015\Projects\NoTab\NoTab\bin\Debug\NoTab.exe.config
+c:\users\styonsjr\documents\visual studio 2015\Projects\NoTab\NoTab\bin\Debug\NoTab.exe
+c:\users\styonsjr\documents\visual studio 2015\Projects\NoTab\NoTab\bin\Debug\NoTab.pdb
+c:\users\styonsjr\documents\visual studio 2015\Projects\NoTab\NoTab\obj\Debug\NoTab.exe
+c:\users\styonsjr\documents\visual studio 2015\Projects\NoTab\NoTab\obj\Debug\NoTab.pdb
+C:\Users\styonsjr\Documents\Visual Studio 2015\Projects\NoTab\NoTab\obj\Debug\NoTab.csprojResolveAssemblyReference.cache
