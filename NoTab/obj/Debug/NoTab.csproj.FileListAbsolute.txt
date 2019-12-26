@@ -4,3 +4,8 @@ c:\users\styonsjr\documents\visual studio 2015\Projects\NoTab\NoTab\bin\Debug\No
 c:\users\styonsjr\documents\visual studio 2015\Projects\NoTab\NoTab\obj\Debug\NoTab.exe
 c:\users\styonsjr\documents\visual studio 2015\Projects\NoTab\NoTab\obj\Debug\NoTab.pdb
 C:\Users\styonsjr\Documents\Visual Studio 2015\Projects\NoTab\NoTab\obj\Debug\NoTab.csprojResolveAssemblyReference.cache
+C:\dev\src\github\NoTab\NoTab\bin\Debug\NoTab.exe.config
+C:\dev\src\github\NoTab\NoTab\bin\Debug\NoTab.exe
+C:\dev\src\github\NoTab\NoTab\bin\Debug\NoTab.pdb
+C:\dev\src\github\NoTab\NoTab\obj\Debug\NoTab.exe
+C:\dev\src\github\NoTab\NoTab\obj\Debug\NoTab.pdb

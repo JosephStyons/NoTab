@@ -10,6 +10,7 @@ namespace NoTab
   class Program
   {
     static bool noInteract = false;
+    static bool infinityBelt = false;
 
     static void WriteIf(string msg, bool isInteractive = true)
     {
@@ -32,6 +33,7 @@ namespace NoTab
       try
       {
         noInteract = (args.Length >= 4 && args[3] == "SILENT");
+        infinityBelt = (args.Length >= 5 && args[4]  == "INFINITYBELT");
         WriteIf("Strip tabs from:");
         WriteIf("Files matching this pattern      : " + args[1]);
         WriteIf("In this folder and all subfolders: " + args[0]);
@@ -48,6 +50,13 @@ namespace NoTab
           try
           {
             WriteIf(StripTabsFromFile(f, int.Parse(args[2])), false);
+            //special flag to do processing unique to the InfinityBelt project.
+            //i know this is out of place in "NoTab", but I'm doing it to save time.
+            //pretty sure nobody else uses this project but me anyway :)
+            if (infinityBelt)
+            {
+              WriteIf(SpecialInfinityBeltProcessing(f));
+            }
           }
           catch (Exception fileException)
           {
@@ -65,6 +74,21 @@ namespace NoTab
       WriteIf(string.Empty);
       WriteIf("Press any key to continue...");
       ReadIf();
+    }
+
+    static string SpecialInfinityBeltProcessing(string filename)
+    {
+      string originalText = File.ReadAllText(filename);
+      string newText = originalText.Replace(" />", "/>");
+      if (newText == originalText)
+      {
+        return "U:" + filename;
+      }
+      else
+      {
+        File.WriteAllText(filename, newText);//write the new version to disk
+        return "IB:" + filename;
+      }
     }
 
     static string StripTabsFromFile(string filename, int spaceCount)
